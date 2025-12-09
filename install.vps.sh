@@ -8,7 +8,7 @@ read -p "主机名: " -r name
 hostnamectl hostname "$name"
 
 # 安装必要软件
-apt install -y zsh curl git vim wget
+apt install -y zsh curl git vim wget make
 
 # zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
