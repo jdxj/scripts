@@ -16,7 +16,7 @@ ssh-keygen
 apt install -y zsh curl git vim wget make net-tools
 
 # zsh
-rm -rf ~/.oh-my-zsh
+rm -rf ~/.oh-my-zsh ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sed -i '11s/robbyrussell/jonathan/' ~/.zshrc
 
