@@ -16,9 +16,10 @@ ssh-keygen
 apt install -y zsh curl git vim wget make net-tools
 
 # zsh
-rm -rf ~/.oh-my-zsh ~/.zshrc
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-sed -i '11s/robbyrussell/jonathan/' ~/.zshrc
+if [ ! -e ~/.zshrc ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    sed -i '11s/robbyrussell/jonathan/' ~/.zshrc
+fi
 
 # tcp
 wget https://raw.githubusercontent.com/yeahwu/v2ray-wss/main/tcp-window.sh && bash tcp-window.sh
