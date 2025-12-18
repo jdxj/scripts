@@ -19,7 +19,7 @@ hostnamectl hostname "$name"
 ssh-keygen
 
 # 安装必要软件
-apt install -y zsh curl git vim wget make net-tools dnsutils telnet nload
+apt install -y zsh curl git vim wget make net-tools dnsutils telnet nload chrony
 
 # zsh
 if [ ! -e ~/.zshrc ]; then
