@@ -19,7 +19,8 @@ hostnamectl hostname "$name"
 ssh-keygen
 
 # 安装必要软件
-apt install -y zsh curl git vim wget make net-tools dnsutils telnet nload chrony jq tcpdump netcat-openbsd wireguard-tools nmap
+apt install -y zsh curl git vim wget make net-tools dnsutils telnet nload \
+    chrony jq tcpdump netcat-openbsd wireguard-tools nmap
 
 # zsh
 if [ ! -e ~/.zshrc ]; then
