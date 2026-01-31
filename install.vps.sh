@@ -78,6 +78,12 @@ MaxStartups 2:30:10
 
 # 记录详细日志
 LogLevel VERBOSE
+
+# scp
+Subsystem sftp internal-sftp
+
+# 应该自定义的部分
+Port 22
 EOF
 systemctl restart sshd
 
