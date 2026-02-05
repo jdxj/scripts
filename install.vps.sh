@@ -20,7 +20,7 @@ ssh-keygen
 
 # 安装必要软件
 apt install -y zsh curl git vim wget make net-tools dnsutils telnet nload \
-    chrony jq tcpdump netcat-openbsd wireguard-tools nmap iperf3
+    chrony jq tcpdump netcat-openbsd wireguard-tools nmap iperf3 traceroute
 
 # zsh
 if [ ! -e ~/.zshrc ]; then
